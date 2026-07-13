@@ -1,21 +1,13 @@
-const title = document.querySelector('#title');
+const nameInput = document.querySelector("#nameInput");
+const ageInput = document.querySelector("#ageInput");
+const hobbyInput = document.querySelector("#hobbyInput");
+const button = document.querySelector("#button");
 const name = document.querySelector('#name');
 const age = document.querySelector('#age');
-const button = document.querySelector('#changeLanguage');
-let language = 0;
+const hobby = document.querySelector('#hobby');
 
-button.addEventListener('click', function() {
-    if (language === 0) {
-        language = 1;
-        title.textContent= '私について'
-        name.textContent = '私の名前はたこてんです。'
-        age.textContent = '私は16歳です。'
-        button.textContent = 'Change to English'
-    } else {
-        language = 0;
-        title.textContent= 'About Me'
-        name.textContent = 'My name is Takoten.'
-        age.textContent = 'I am 16 years old.'
-        button.textContent = '日本語にする'
-    }
+button.addEventListener("click", function () {
+    name.textContent = `My name is ${nameInput.value}.`
+    age.textContent = `I'm ${ageInput.value} years old.`
+    hobby.textContent = `My hobby is ${hobbyInput.value}`
 });
