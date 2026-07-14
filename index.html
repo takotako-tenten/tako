@@ -1,103 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Self introduction sheet</title>
+        <title>change color</title>
         <style>
-            body {
-                background-color: ghostwhite;
+            .red {
+                color: red;
             }
 
-            h1 {
-                font-size: 40px;
-                text-align: center;
+            .blue {
+                color: blue;
             }
-
-            h2 {
-                font-size: 35px;
-                text-align: center;
-            }
-
-            input {
-                width: 180px;
-                height: 25px;
-            }
-
-            button {
-                font-size: auto;
-                height: 20px;
-                width: 60px;
-            }
-
-            .pageTitle {
-                border: 3px solid black;
-                border-radius: 10px;
-                margin-bottom: 15px;
-                background-color: whitesmoke;
-            }
-
-            .userInput {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-
-            .element {
-                border: 2px solid;
-                border-radius: 10px;
-                width:50px;
-                flex-grow: 1;
-                text-align: center;
-                padding: 5px;
-                background-color: snow;
-            }
-
-            .elements {
-                display: flex;
-                gap: 10px;
-                justify-content: center;
-            }
-
-            .introSheet {
-                margin-top: 100px;
-            }
-
-
-        
         </style>
     </head>
-
     <body>
-        <div class ="pageTitle">
-            <h1>Self introduction sheet maker</h1>
-        </div>
-
-        <div class = "userInput">
-            <h2>Fill in blanks</h2>
-
-            <input id="nameInput" placeholder="name">
-            <input id="ageInput" placeholder="age">
-            <input id="hobbyInput" placeholder="hobby">
-            <button id="button">send</button>
-        </div>
-
-        <div class ="introSheet">
-            <div class = "title">
-                <h2>About Me</h2>
-            </div>
-
-            <div class = "elements">
-                <div class = "element name">
-                    <p id="name">My name is ~.</p>
-                </div>
-                <div class ="element age">
-                    <p id="age">I'm ~ years old.</p>
-                </div>
-                <div class="element hobby">
-                    <p id="hobby">My hobby is ~.</p>
-                </div>
-            </div>
-        </div>
+        <h1>色を変える</h1>
+        <p id ="text">青や赤に色が変わる</p>
+        <button id = "button">色を変える</button>
 
         <script src="index.js"></script>
     </body>
