@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>change color</title>
+        <title>about me</title>
+
         <style>
-            .red {
-                color: red;
+            .dark {
+                --bg-color: black;
+                --ti-color: white;
+                --te-color: gainsboro;
             }
 
-            .blue {
-                color: blue;
+            .light {
+                --ba-color: white;
+                --ti-color: black;
+                --te-color: silver;
+            }
+
+            body {
+                background-color: var(--bg-color);
+            }
+
+            h1 {
+                color: var(--ti-color);
+            }
+
+            p {
+                color: var(--te-color);
+            }
+
+            .header-area {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            #title {
+                margin:auto;
             }
         </style>
     </head>
-    <body>
-        <h1>色を変える</h1>
-        <p id ="text">青や赤に色が変わる</p>
-        <button id = "button">色を変える</button>
-
+    <body id="body">
+        <div class="header-area">
+            <h1 id="title">About me</h1>
+            <button id="button">Dark mode</button>
+        </div>
+        <p id="text">My name is takoten. I'm S1 student. I was born in Japan.</p>
         <script src="index.js"></script>
     </body>
 </html>
