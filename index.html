@@ -4,27 +4,17 @@
         <title>about me</title>
 
         <style>
-            .dark {
+            body.dark {
                 --bg-color: black;
                 --ti-color: white;
                 --te-color: gainsboro;
             }
 
-            .light {
-                --ba-color: white;
-                --ti-color: black;
-                --te-color: silver;
-            }
-
-            body {
+            #body {
                 background-color: var(--bg-color);
             }
 
-            h1 {
-                color: var(--ti-color);
-            }
-
-            p {
+            #text {
                 color: var(--te-color);
             }
 
@@ -35,6 +25,7 @@
 
             #title {
                 margin:auto;
+                color: var(--ti-color);
             }
         </style>
     </head>
@@ -43,7 +34,7 @@
             <h1 id="title">About me</h1>
             <button id="button">Dark mode</button>
         </div>
-        <p id="text">My name is takoten. I'm S1 student. I was born in Japan.</p>
+        <p id="text">My name is teruki. I'm S1 student. I was born in Japan.</p>
         <script src="index.js"></script>
     </body>
 </html>
